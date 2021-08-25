@@ -1,11 +1,46 @@
-.logo-img{
-    width: 8%;
+/* .logo-img{
+    width: 15%;
+} */
+/* general rules */
+.clear{
+    clear: both;
 }
+li {
+    list-style-type: none;
+}
+ul{
+    padding: 0%;
+}
+/* @media (min-width:576px) and (max-width:767px){
+    .footer-div-one{
+        margin: 15px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    .footer-div-two{
+        margin: 15px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    .footer-div-three{
+margin: 15px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    .footer-div-four{
+margin: 15px;
+    }
+} */
+/* end */
 .green-text{
     color: limegreen;
 }
-
-
+/* sm media query
+    make all fonts responsive so I do not have to do it manually
+    icons in middle-main needs margin so that text does not clip into the icon
+    martgin at the upper-footer
+    up arrow icon needs margin to seperate the sections
+*/
 
 
 
@@ -40,4 +75,11 @@ Single-colored icons can be modified like so:
 
 .icon{
     font-size: 80px;
+}
+.footer .icon{
+    font-size: 20px;
+    color: grey;
+}
+.lower-main .icon{
+    font-size: 25px;
 }
