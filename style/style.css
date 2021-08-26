@@ -1,6 +1,10 @@
-/* .logo-img{
-    width: 15%;
-} */
+:root{
+    --header: #26292e;
+    --main-green: #a0c63f;
+    --headerText: 'Hina Mincho', serif;
+    --subtext: 'Montserrat', sans-serif;
+    --colophon: #202020;
+}
 /* general rules */
 .clear{
     clear: both;
@@ -11,43 +15,128 @@ li {
 ul{
     padding: 0%;
 }
-/* @media (min-width:576px) and (max-width:767px){
+.header{
+    background-image: url(../Media/Umbrellabackground.PNG);
+}
+.header .nav a{
+    color: grey;
+    font-size: calc(10px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+.upper-main{
+    background-color: var(--main-green);
+}
+.middle-main{
+    background-image: url(../Media/Umbrellabackground.PNG);
+}
+.lower-main{
+    background-image: url(../Media/Umbrellabackground.PNG);
+}
+.logo-name{
+    font-family: var(--headerText)
+    
+}
+.logo-name{
+    font-size: calc(14px + (55 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+.logo-slogan{
+    font-family: var(--subtext);
+    font-size: calc(14px + (12 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+.colophon-section{
+    background-color: var(--colophon);
+}
+.card-title{
+    font-family: var(--subtext);
+}
+.card-text{
+    font-family: sans-serif;
+}
+.green-text{
+    color: var(--main-green);
+}
+.black-text{
+    color: var(--colophon);
+    font-weight: bold;
+}
+.upper-text{
+    font-family: var(--subtext);
+    font-weight: bolder;
+}
+.lower-text{
+    font-family: var(--subtext);
+}
+.footer .nav a{
+    color: white;
+}
+.colophon-text{
+    color: white;
+}
+.sub-header{
+    font-family: var(--subtext);
+}
+.card-img{
+    margin: 0px;
+    padding: 0px;
+}
+@media (min-width:576px) and (max-width:767px){
     .footer-div-one{
-        margin: 15px;
+        margin: 15px 0px;
     }
 }
 @media (min-width:576px) and (max-width:767px){
     .footer-div-two{
-        margin: 15px;
+        margin: 15px 0px;
     }
 }
 @media (min-width:576px) and (max-width:767px){
     .footer-div-three{
-margin: 15px;
+margin: 15px 0px;
     }
 }
 @media (min-width:576px) and (max-width:767px){
     .footer-div-four{
-margin: 15px;
+margin: 15px 0px;
     }
-} */
-/* end */
-.green-text{
-    color: limegreen;
 }
-/* sm media query
-    make all fonts responsive so I do not have to do it manually
-    icons in middle-main needs margin so that text does not clip into the icon
-    martgin at the upper-footer
-    up arrow icon needs margin to seperate the sections
+@media (min-width:576px) and (max-width:767px){
+    .sponser{
+margin: 10px 0px;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    .nav-up{
+margin: 10px 0px;
+    }
+}
+/* med 
+    make nav centered on the right
+    margin on sponsers
+    button margin
+    footer divs 1-4 need margin top & bot
 */
-
-
-
-
-
-
-
+@media (min-width:768px) and (max-width:991px){
+    .header .nav{
+    margin: 30px 0px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .sponser{
+    margin: 5px 0px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .footer-div-one, .footer-div-two, .footer-div-three, .footer-div-four{
+    margin: 10px 0px;
+    }
+}
+/* lg */
+@media (min-width:992px) and (max-width:1200px){
+    .sponser{
+    margin: 0 auto;
+    padding: 0%;
+    }
+}
+/* end */
 
 
 
@@ -76,10 +165,36 @@ Single-colored icons can be modified like so:
 .icon{
     font-size: 80px;
 }
+.icon-top .icon{
+    margin: 0 aut0;
+;
+    color: white;
+    background-color: var(--main-green);
+    border-radius: 50%;
+    padding: 10px;
+}
+/* .icon-top{
+    border: 2px solid white;
+    border-radius: 25%;
+} */
+.icon-circle-up{
+    color: white;
+    background-color: var(--main-green);
+    border: 2px solid white;
+    border-radius: 50%;
+}
 .footer .icon{
     font-size: 20px;
     color: grey;
 }
 .lower-main .icon{
-    font-size: 25px;
+    font-size: 45px;
+}
+.outer-border{
+    margin:0px auto;
+    background-color: white;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    padding: 5px;
 }
