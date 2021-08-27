@@ -15,11 +15,6 @@ li {
 ul{
     padding: 0%;
 }
-.dash{
-    border-bottom: 2px dashed grey;
-    margin-bottom: 20px;
-    padding: 0%;
-}
 .header{
     background-image: url(../Media/Umbrellabackground.PNG);
     margin-bottom: 10px;
@@ -48,14 +43,15 @@ ul{
     font-family: var(--subtext);
     font-size: calc(14px + (12 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
-.colophon-section{
-    background-color: var(--colophon);
-}
 .card-title{
     font-family: var(--subtext);
 }
 .card-text{
     font-family: sans-serif;
+}
+.card-img{
+    margin: 0px;
+    padding: 0px;
 }
 .green-text{
     color: var(--main-green);
@@ -68,8 +64,21 @@ ul{
     font-family: var(--subtext);
     font-weight: bolder;
 }
+.sub-header{
+    font-family: var(--subtext);
+    padding: 0%;
+    font-size: calc(18px + (51 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+.dash{
+    border-bottom: 2px dashed grey;
+    margin-bottom: 20px;
+    padding: 0%;
+}
 .lower-text{
     font-family: var(--subtext);
+}
+.portfolio-header{
+    font-size: calc(18px + (42 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 .footer .nav a{
     color: white;
@@ -83,17 +92,8 @@ ul{
 .colophon-text{
     color: white;
 }
-.sub-header{
-    font-family: var(--subtext);
-    padding: 0%;
-    font-size: calc(18px + (51 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
-.portfolio-header{
-    font-size: calc(18px + (42 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
-.card-img{
-    margin: 0px;
-    padding: 0px;
+.colophon-section{
+    background-color: var(--colophon);
 }
 @media (min-width:576px) and (max-width:767px){
     .footer-div-one{
@@ -164,13 +164,6 @@ margin: 10px 0px;
     }
 }
 /* end */
-
-
-
-
-
-
-
 
 .icon {
     display: inline-block;
