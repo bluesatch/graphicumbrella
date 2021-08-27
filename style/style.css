@@ -17,6 +17,7 @@ ul{
 }
 .header{
     background-image: url(../Media/Umbrellabackground.PNG);
+    margin-bottom: 10px;
 }
 .header .nav a{
     color: grey;
@@ -67,6 +68,12 @@ ul{
 }
 .footer .nav a{
     color: white;
+}
+.footer{
+    font-family: serif;
+}
+.footer-header{
+    font-family: var(--subtext);
 }
 .colophon-text{
     color: white;
@@ -134,6 +141,16 @@ margin: 10px 0px;
     .sponser{
     margin: 0 auto;
     padding: 0%;
+    }
+}
+@media (min-width:992px) and (max-width:1200px){
+    .header .nav{
+    margin: 40px;
+    }
+}
+@media (min-width:1201px) and (max-width:1400px){
+    .header .nav{
+    margin: 40px;
     }
 }
 /* end */
